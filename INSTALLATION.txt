@@ -1,0 +1,29 @@
+Military Asset Management System (MAMS)
+
+PREREQUISITES:
+1. Python 3.10+
+2. Node.js 18+
+
+START GUIDE:
+
+Step 1: Backend Setup
+1. Open a terminal in the backend folder and install required libraries:
+   pip install fastapi uvicorn sqlalchemy pydantic python-jose passlib python-multipart
+2. Initialize and seed the database:
+   python seed.py
+4. Start the server:
+   uvicorn main:app --reload --port 8001
+
+Step 2: Frontend Setup
+1. Open a NEW terminal in the "frontend" folder and install dependencies:
+   npm install
+2. Start the interface:
+   npm run dev
+
+Step 3: Access the App
+Open browser to: http://localhost:5173
+
+LOGIN CREDENTIALS:
+- Commander:  cmdr_north / pass123  (View Dashboard & Inventory)
+- Logistics:  log_west   / pass123  (View Transfers only)
+- Admin:      admin      / admin123 (Global Access)
